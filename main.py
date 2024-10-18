@@ -133,6 +133,7 @@ def compare_features(feature_data):
     stable_threshold = len(feature_data) - 1  # Maximum stability
     stable_cells = [1 if count == stable_threshold else 0 for count in stable_cells]
 
+    # show stable cells as numpy array
     print(f"Stable cells: {sum(stable_cells)}/64")
 
     # Save stability results
